@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
 //when search artist name, Check the db first,
 //if the data not found, request API call, and save it to database.
-//Save top 5 albums of that artist. and render to home-pages
+//Save top 5 albums of that artist. and render to album pages
 router.post('/search', async (req, res) => {
     //check if data exist
     const albumData = await Album.findAll({
@@ -67,9 +67,6 @@ router.post('/search', async (req, res) => {
     else{
             // console.log(albumData);
             const albums = albumData.map((album) => album.get({ plain: true }));
-            console.log(albums);
-            console.log("here we go");
-            // res.render('album', { albums }); //add render data from db
             res.status(200).render('album',{albums});
     }
 
