@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const withAuth = require('../utils/withAuth');
-const { Album } = require('../../models');
+const { Album } = require('../models');
 require('dotenv').config();
 var SpotifyWebApi = require('spotify-web-api-node');
+const { findAll } = require('../models/Users');
 
 var spotifyApi = new SpotifyWebApi({
     clientId: process.env.CLIENT_ID,
@@ -21,37 +22,56 @@ router.get('/', async (req, res) => {
 //if the data not found, request API call, and save it to database.
 //Save top 5 albums of that artist. and render to home-pages
 router.post('/search', async (req, res) => {
-    //Spotify API call request
-    spotifyApi.searchAlbums(req.body.searchName, { limit: 5, offset: 20 })
-        .then((data) => {
-            console.log('search albums', data.body);
-
-            data.body.albums.items.forEach(async(album) => {
-                const newAlbum = await Album.create({
-                    name:album.artists.name,
-                    album_id:album.id,
-                    uri:album.uri,
-                    total_tracks:album.total_tracks,
-                    release_date:album.release_date,
-                    artist_name:album.artists.name,
-                    artist_id:album.artists.id,
-                })
-                if(!newAlbum){
-                    console.error()
-                }
-                else{
-                    console.log(newAlbum);
-                }
-
-            });
-
-            res.json(data.body);
+    //check if data exist
+    const albumData = await Album.findAll({
+        where: {
+            artist_name: req.body.searchName,
         },
-            function (err) {
-                console.error(err);
-            }
-        );
+    });
+    // console.log(albumData);
+    if (!albumData) {
+        //Spotify API call request
+        spotifyApi.searchAlbums(req.body.searchName, { limit: 5, offset: 20 })
+            .then((data) => {
+                console.log('search albums', data.body);
 
+                data.body.albums.items.forEach(async (album) => {
+                    const newAlbum = await Album.create({
+                        id: album.id,
+                        name: album.name,
+                        url: album.uri,
+                        total_tracks: album.total_tracks,
+                        release_date: album.release_date,
+                        artist_name: album.artists[0].name,
+                        artist_id: album.artists[0].id,
+                    });
+                    if (!newAlbum) {
+                        alert("fail to create");
+                    }
+                    else {
+                        console.log(newAlbum);
+                    }
+
+                });
+                const albums = data.body.albums.map((album) => album.get({ plain: true }));
+                // console.log(data.body.albums);
+
+                res.render('homepage', { albums });
+            },
+                function (err) {
+                    console.error(err);
+                }
+            );
+    }
+    //if data exist
+    else{
+            // console.log(albumData);
+            const albums = albumData.map((album) => album.get({ plain: true }));
+            console.log(albums);
+            console.log("here we go");
+            // res.render('album', { albums }); //add render data from db
+            res.status(200).render('album',{albums});
+    }
 
 
 });

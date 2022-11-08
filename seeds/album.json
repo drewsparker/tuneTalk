@@ -1,95 +1,47 @@
-[
-   {
-    "id": "3lS1y25WAhcqJDATJK70Mq",
-	"uri": "spotify:album:3lS1y25WAhcqJDATJK70Mq",
-	"name": "Midnights (3am Edition)",
-	"type": "ALBUM",
-	"date": 2022,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   } ,
-   {
-    "id": "4894htPwC6zoiuTqUQwn4I",
-	"uri": "spotify:album:4894htPwC6zoiuTqUQwn4I",
-	"name": "Midnights (3am Edition)",
-	"type": "ALBUM",
-	"date": 2022,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "151w1FgRZfnKZA9FEcg9Z3",
-	"uri": "spotify:album:151w1FgRZfnKZA9FEcg9Z3",
-	"name": "Midnights",
-	"type": "ALBUM",
-	"date": 2022,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "6kZ42qRrzov54LcAk4onW9",
-	"uri": "spotify:album:6kZ42qRrzov54LcAk4onW9",
-	"name": "Red (Taylor's Version)",
-	"type": "ALBUM",
-	"date": 2021,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "6AORtDjduMM3bupSWzbTSG",
-	"uri": "spotify:album:6AORtDjduMM3bupSWzbTSG",
-	"name": "evermore (deluxe version)",
-	"type": "ALBUM",
-	"date": 2021,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "2Xoteh7uEpea4TohMxjtaq",
-	"uri": "spotify:album:2Xoteh7uEpea4TohMxjtaq",
-	"name": "evermore",
-	"type": "ALBUM",
-	"date": 2020,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "0PZ7lAru5FDFHuirTkWe9Z",
-	"uri": "spotify:album:0PZ7lAru5FDFHuirTkWe9Z",
-	"name": "folklore: the long pond studio sessions (from the Disney+ special) [deluxe edition]",
-	"type": "ALBUM",
-    "date": 2020,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "1pzvBxYgT6OVwJLtHkrdQK",
-	"uri": "spotify:album:1pzvBxYgT6OVwJLtHkrdQK",
-	"name": "folklore (deluxe version)",
-	"type": "ALBUM",
-	"date": 2020,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "2fenSS68JI1h4Fo296JfGr",
-	"uri": "spotify:album:2fenSS68JI1h4Fo296JfGr",
-	"name": "folklore",
-	"type": "ALBUM",
-	"date": 2020,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-	
-   },
-   {
-    "id": "1NAmidJlEaVgA3MpcPFYGq",
-	"uri": "spotify:album:1NAmidJlEaVgA3MpcPFYGq",
-	"name": "Lover",
-	"type": "ALBUM",
-	"date": 2019,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"
-   },
-   {
-    "id": "6DEjYFkNZh67HP7R9PSZvv",
-	"uri": "spotify:album:6DEjYFkNZh67HP7R9PSZvv",
-	"name": "reputation",
-	"type": "ALBUM",
-	"date": 2017,
-    "artists_id":"04gDigrS5kc9YWfZHwBETP"	
-   }
-   
-										
-
-										
+[  
+	{
+		"id" : "0mEeCuKJQ8Xh9tQ5dMm89X",
+		"name" : "The Most Beautiful Moment in Life Pt.1",
+		"url" : "spotify:album:0mEeCuKJQ8Xh9tQ5dMm89X",
+		"total_track" : null,
+		"release_date" : "2015-04-29 00:00:00",
+		"artist_name" : "BTS",
+		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "2ds8iT4wkaN1Q1gZe1qcOD",
+		"name" : "The Most Beautiful Moment in Life Pt.2",
+		"url" : "spotify:album:2ds8iT4wkaN1Q1gZe1qcOD",
+		"total_track" : null,
+		"release_date" : "2015-11-30 00:00:00",
+		"artist_name" : "BTS",
+		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "35voVqYGkotyJ945O9egDY",
+		"name" : "Dark & Wild",
+		"url" : "spotify:album:35voVqYGkotyJ945O9egDY",
+		"total_track" : null,
+		"release_date" : "2014-08-20 00:00:00",
+		"artist_name" : "BTS",
+		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "4cmHvSMDrSRe2sLodew8sV",
+		"name" : "Butter (Holiday Remix)",
+		"url" : "spotify:album:4cmHvSMDrSRe2sLodew8sV",
+		"total_track" : null,
+		"release_date" : "2021-12-03 00:00:00",
+		"artist_name" : "BTS",
+		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "66J1OXSaS3hBZASOV3el8t",
+		"name" : "FACE YOURSELF",
+		"url" : "spotify:album:66J1OXSaS3hBZASOV3el8t",
+		"total_track" : null,
+		"release_date" : "2018-04-04 00:00:00",
+		"artist_name" : "BTS",
+		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
 ]
