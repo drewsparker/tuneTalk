@@ -1,0 +1,646 @@
+{
+	"data": {
+		"album": {
+			"playability": {
+				"playable": true
+			},
+			"tracks": {
+				"totalCount": 20,
+				"items": [
+					{
+						"uid": "1d7271675fcbdf61b03c",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:4g2c7NoTWAOSYDy44l9nub",
+							"name": "Lavender Haze",
+							"playcount": "107541780",
+							"discNumber": 1,
+							"trackNumber": 1,
+							"contentRating": {
+								"label": "EXPLICIT"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 202395
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "8683c4eaee641ead4a03",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:199E1RRrVmVTQqBXih5qRC",
+							"name": "Maroon",
+							"playcount": "93392496",
+							"discNumber": 1,
+							"trackNumber": 2,
+							"contentRating": {
+								"label": "EXPLICIT"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 218270
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "adb739f2e8fc63670a5c",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:02Zkkf2zMkwRGQjZ7T4p8f",
+							"name": "Anti-Hero",
+							"playcount": "167195092",
+							"discNumber": 1,
+							"trackNumber": 3,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 200690
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "d26c39d91eee70cada10",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:6ADDIJxxqzM9LMpm78yzQG",
+							"name": "Snow On The Beach (feat. Lana Del Rey)",
+							"playcount": "98685941",
+							"discNumber": 1,
+							"trackNumber": 4,
+							"contentRating": {
+								"label": "EXPLICIT"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 256124
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									},
+									{
+										"uri": "spotify:artist:00FQb4jTyendYWaN8pK0wa",
+										"profile": {
+											"name": "Lana Del Rey"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "e4e8dd7b0734ce961a59",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:7gVWKBcfIW93YxNBi3ApIE",
+							"name": "You're On Your Own, Kid",
+							"playcount": "89132849",
+							"discNumber": 1,
+							"trackNumber": 5,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 194206
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "98a80f0df4853a22bf43",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:6Nl7KyvjkFncGsjB49SxLl",
+							"name": "Midnight Rain",
+							"playcount": "99758212",
+							"discNumber": 1,
+							"trackNumber": 6,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 174782
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "6fa948ce1bd71d6f70f0",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:6C7OF1Jal7YkyjzyUG8vkK",
+							"name": "Question...?",
+							"playcount": "76732269",
+							"discNumber": 1,
+							"trackNumber": 7,
+							"contentRating": {
+								"label": "EXPLICIT"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 210556
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "b6beed91f96780448137",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:5yeuXkukVGuix3vmLu2BPJ",
+							"name": "Vigilante Shit",
+							"playcount": "80176656",
+							"discNumber": 1,
+							"trackNumber": 8,
+							"contentRating": {
+								"label": "EXPLICIT"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 164801
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "e2f55f1f45fa451bc25b",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:0jvo9CjnbR0lYUDTSNTMiu",
+							"name": "Bejeweled",
+							"playcount": "79540907",
+							"discNumber": 1,
+							"trackNumber": 9,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 194165
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "c254a572921f7e8a2e18",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:43q586vP8gGkYypKoSddhl",
+							"name": "Labyrinth",
+							"playcount": "63106491",
+							"discNumber": 1,
+							"trackNumber": 10,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 247962
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "78cd54d0b7d0aae925a9",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:5oqDgw5VGBln5dSIOPWyBq",
+							"name": "Karma",
+							"playcount": "84201998",
+							"discNumber": 1,
+							"trackNumber": 11,
+							"contentRating": {
+								"label": "EXPLICIT"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 204852
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "42920a4662dbec8b9e89",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:3zmwONxswBAzGwExPugSLN",
+							"name": "Sweet Nothing",
+							"playcount": "60173790",
+							"discNumber": 1,
+							"trackNumber": 12,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 188496
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "c7504c4b3609256620c5",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:56hioFjQ0DXrdn04hZcFgG",
+							"name": "Mastermind",
+							"playcount": "63657770",
+							"discNumber": 1,
+							"trackNumber": 13,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 191039
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "ee5bdbe3c9025f6869d8",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:3UMrglJeju5yWyYIW6o99b",
+							"name": "The Great War",
+							"playcount": "36717576",
+							"discNumber": 1,
+							"trackNumber": 14,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 240355
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "abd27c42a15d9520bfbb",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:0BiqmkasE5FdrChwKfVp8X",
+							"name": "Bigger Than The Whole Sky",
+							"playcount": "35771490",
+							"discNumber": 1,
+							"trackNumber": 15,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 218502
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "05c07b7a03af83eff0ab",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:7712gjoih4QoDbXpljEk21",
+							"name": "Paris",
+							"playcount": "32633722",
+							"discNumber": 1,
+							"trackNumber": 16,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 196258
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "aba25e50b7676342c14d",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:5kiZGSxgqPdv6rbqL9THdd",
+							"name": "High Infidelity",
+							"playcount": "30105288",
+							"discNumber": 1,
+							"trackNumber": 17,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 231475
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "8abc891e812de6010335",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:6wAFvJPpTZVirBKGZ4EnMW",
+							"name": "Glitch",
+							"playcount": "27306026",
+							"discNumber": 1,
+							"trackNumber": 18,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 148781
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "cc673766360277121076",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:0aV5uARAknQgYhBaK944FP",
+							"name": "Would've, Could've, Should've",
+							"playcount": "40410014",
+							"discNumber": 1,
+							"trackNumber": 19,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 260361
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"uid": "2eb4bd5a1496a3626ba2",
+						"track": {
+							"saved": false,
+							"uri": "spotify:track:3QF5RsWzK1lCvf2o2cY65P",
+							"name": "Dear Reader",
+							"playcount": "25862429",
+							"discNumber": 1,
+							"trackNumber": 20,
+							"contentRating": {
+								"label": "NONE"
+							},
+							"relinkingInformation": null,
+							"duration": {
+								"totalMilliseconds": 225194
+							},
+							"playability": {
+								"playable": true
+							},
+							"artists": {
+								"items": [
+									{
+										"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+										"profile": {
+											"name": "Taylor Swift"
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"extensions": {
+		"cacheControl": {
+			"version": 1,
+			"hints": []
+		}
+	}
+}
