@@ -8,7 +8,6 @@ Artist.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      primaryKey: true,
       autoIncrement: true,
     },
     name: {
@@ -19,6 +18,7 @@ Artist.init(
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
+      primaryKey: true,
     },
   },
   {
