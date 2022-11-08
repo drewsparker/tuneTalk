@@ -1,17 +1,16 @@
 const router = require('express').Router();
 const withAuth = require('../utils/withAuth');
-const fs = require('fs');
+const { Album } = require('../../models');
 require('dotenv').config();
 var SpotifyWebApi = require('spotify-web-api-node');
 
 var spotifyApi = new SpotifyWebApi({
-    clientId: 'fcecfc72172e4cd267473117a17cbd4d',
-    clientSecret: 'a6338157c9bb5ac9c71924cb2940e1a7',
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
     redirectUri: 'http://www.example.com/callback'
 });
 
-spotifyApi.setAccessToken('BQB_tVyxgLBwA6vX8MiA8iOgfw775bGsP2PZmQ1O7SRtV55_vq5AS-YDHCucznXWfGeu89U_nRvdeBwa3NXPzF9B0bc4Bxri91qAzQztw_whqFt-sqKoKdk5_L4D5XgJNcNYhr1xAG-6R8d0AFfXrF_SKORX_AGPGFButsvkRoLIVA-WKpvLlnaoljUKN_G2jur0T81y');
-
+spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
 
 
 router.get('/', async (req, res) => {
@@ -26,24 +25,25 @@ router.post('/search', async (req, res) => {
     spotifyApi.searchAlbums(req.body.searchName, { limit: 5, offset: 20 })
         .then((data) => {
             console.log('search albums', data.body);
-            //Create album
-            // data.body.albums.items.forEach(album => {
-            //     const newAlbum = await album.create({
 
-            //     })
+            data.body.albums.items.forEach(async(album) => {
+                const newAlbum = await Album.create({
+                    name:album.artists.name,
+                    album_id:album.id,
+                    uri:album.uri,
+                    total_tracks:album.total_tracks,
+                    release_date:album.release_date,
+                    artist_name:album.artists.name,
+                    artist_id:album.artists.id,
+                })
+                if(!newAlbum){
+                    console.error()
+                }
+                else{
+                    console.log(newAlbum);
+                }
 
-
-            // });
-            // const album =
-            // {
-            //     artist_name: data.body.albums.items[i].artists.name,
-            //     artist_id: data.body.albums.items[i].artists.id,
-            //     album_name: data.body.albums.items[i].name,
-            //     album_id: data.body.albums.items[i].id,
-            //     album_uri: data.body.albums.items[i].uri,
-            //     album_total_track: data.body.albums.items[i].total_tracks,
-            //     album_release_date: data.body.albums.items[i].release_date,
-            // };
+            });
 
             res.json(data.body);
         },
@@ -51,17 +51,7 @@ router.post('/search', async (req, res) => {
                 console.error(err);
             }
         );
-    // ///Create Artist and albums
-    // try {
-    //     const newProject = await Project.create({
-    //         ...req.body,
-    //         user_id: req.session.user_id,
-    //     });
 
-    //     res.status(200).json(newProject);
-    // } catch (err) {
-    //     res.status(400).json(err);
-    // }
 
 
 });
