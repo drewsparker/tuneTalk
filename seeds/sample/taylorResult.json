@@ -1,0 +1,252 @@
+{
+	"query": "taylor",
+	"artists": {
+		"totalCount": 1000,
+		"items": [
+			{
+				"data": {
+					"uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+					"profile": {
+						"name": "Taylor Swift"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb5a00969a4698c3132a15fbb0",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1785a00969a4698c3132a15fbb0",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:0IqjJsWlAPR2IafHTtnjPQ",
+					"profile": {
+						"name": "Minnz Piano"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb9dbfdfd5de66c2a84aee216e",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1789dbfdfd5de66c2a84aee216e",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:58nB2Z6IiDdTUTwHYw56xI",
+					"profile": {
+						"name": "Taylor Ray Holbrook"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb1528bcb239b3c89e87d753ba",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1781528bcb239b3c89e87d753ba",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:0vn7UBvSQECKJm2817Yf1P",
+					"profile": {
+						"name": "James Taylor"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb5921cb8f2ec7bf6b5e725bcc",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1785921cb8f2ec7bf6b5e725bcc",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:6KImCVD70vtIoJWnq6nGn3",
+					"profile": {
+						"name": "Harry Styles"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebf7db7c8ede90a019c54590bb",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f178f7db7c8ede90a019c54590bb",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:1A0WloDoRE88uUwo3wensY",
+					"profile": {
+						"name": "Taylor Acorn"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb4d386d55e953b61e3f7af159",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1784d386d55e953b61e3f7af159",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:4ULO7IGI3M2bo0Ap7B9h8a",
+					"profile": {
+						"name": "Teyana Taylor"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb8dabeabefec7df1a02e7d61b",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1788dabeabefec7df1a02e7d61b",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:0t8gj9joeg6gQxxrjf9UDd",
+					"profile": {
+						"name": "Taylor Rae"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb4a234669f72c867ac79a7619",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f1784a234669f72c867ac79a7619",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:3Fxg10eJ6YmvUdM2PPB4Zk",
+					"profile": {
+						"name": "Taylor Bickett"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb561c3567b377f57489c5109f",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f178561c3567b377f57489c5109f",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:artist:1294QqYm1VuxxjRiL9M0h9",
+					"profile": {
+						"name": "UPSAHL"
+					},
+					"visuals": {
+						"avatarImage": {
+							"sources": [
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb33c2848d97943f3e589e2d35",
+									"width": 640,
+									"height": 640
+								},
+								{
+									"url": "https:\/\/i.scdn.co\/image\/ab6761610000f17833c2848d97943f3e589e2d35",
+									"width": 160,
+									"height": 160
+								}
+							]
+						}
+					}
+				}
+			}
+		],
+		"pagingInfo": {
+			"nextOffset": 10,
+			"limit": 10
+		}
+	}
+}
