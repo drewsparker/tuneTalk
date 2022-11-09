@@ -1,0 +1,398 @@
+{
+	"query": "maroon5",
+	"albums": {
+		"totalCount": 1000,
+		"items": [
+			{
+				"data": {
+					"uri": "spotify:album:2Auw0pTT6EcQdvHNimhLQI",
+					"name": "V",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02442b53773d50e1b5369bb16c",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00004851442b53773d50e1b5369bb16c",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273442b53773d50e1b5369bb16c",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2014
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:1Vmk9ojYZ2ncn9AkeBRBFn",
+					"name": "What Lovers Do (feat. SZA) [A-Trak Remix]",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							},
+							{
+								"uri": "spotify:artist:3TaUSUXn41GixL7zbvrIDt",
+								"profile": {
+									"name": "A-Trak"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02b4e6d9a58008aecc3a79d3a3",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00004851b4e6d9a58008aecc3a79d3a3",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273b4e6d9a58008aecc3a79d3a3",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2017
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:29hJ8AFYZU98OzenrMr6iU",
+					"name": "It Won't Be Soon Before Long.",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e029741173cf2b32dab39424538",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d000048519741173cf2b32dab39424538",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2739741173cf2b32dab39424538",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2007
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:1pCA38N6MkLlthXtAOvZTU",
+					"name": "JORDI (Deluxe)",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0286a8ab515de4b7aef28cd631",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000485186a8ab515de4b7aef28cd631",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27386a8ab515de4b7aef28cd631",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2021
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:5zClcGCSWj926AMjvBNSLc",
+					"name": "Songs About Jane: 10th Anniversary Edition",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0292f2d790c6a97b195f66d51e",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000485192f2d790c6a97b195f66d51e",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27392f2d790c6a97b195f66d51e",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2002
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:2pjfMmH52fryXVQuWTWOgP",
+					"name": "Overexposed (Deluxe)",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02ce7d499847da02a9cbd1c084",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00004851ce7d499847da02a9cbd1c084",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273ce7d499847da02a9cbd1c084",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2012
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:3ThQ5dvf9wlqB0C7evh5nH",
+					"name": "Red Pill Blues (Deluxe)",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02fc4852898bc6ed85b3e3f89c",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00004851fc4852898bc6ed85b3e3f89c",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273fc4852898bc6ed85b3e3f89c",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2018
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:5x7JzoE4A3DwwU6FPt8qws",
+					"name": "Overexposed",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e023119f490f02fcee6514e8604",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d000048513119f490f02fcee6514e8604",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2733119f490f02fcee6514e8604",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2021
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:7i1Ej2Ix9aIiLKqhNwAB2l",
+					"name": "Overexposed (Deluxe)",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e029d41d73f973cb817462e068a",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d000048519d41d73f973cb817462e068a",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2739d41d73f973cb817462e068a",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2012
+					}
+				}
+			},
+			{
+				"data": {
+					"uri": "spotify:album:1Rv9WRKyYhFaGbuYDaQunN",
+					"name": "Songs About Jane",
+					"artists": {
+						"items": [
+							{
+								"uri": "spotify:artist:04gDigrS5kc9YWfZHwBETP",
+								"profile": {
+									"name": "Maroon 5"
+								}
+							}
+						]
+					},
+					"coverArt": {
+						"sources": [
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0217b3850d758fff5a2301e537",
+								"width": 300,
+								"height": 300
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000485117b3850d758fff5a2301e537",
+								"width": 64,
+								"height": 64
+							},
+							{
+								"url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27317b3850d758fff5a2301e537",
+								"width": 640,
+								"height": 640
+							}
+						]
+					},
+					"date": {
+						"year": 2002
+					}
+				}
+			}
+		],
+		"pagingInfo": {
+			"nextOffset": 10,
+			"limit": 10
+		}
+	}
+}
