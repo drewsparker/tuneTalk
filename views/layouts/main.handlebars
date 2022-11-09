@@ -36,9 +36,12 @@
         </header>
         
         <main>
-            <div class="jumbotron jumbotron-custom">
-                <h4 class="display-4">Music .. </h4>
-            </div>
+            <form class="row justify-content-center mt-10">
+                <div class="form-group col-6">
+                    <input type="text" class="form-control" id="search" placeholder="artist">
+                    <button type="submit" class="btn btn-primary" id="search-btn">Search</button>
+                </div>
+            </form>
             {{{body}}}
         </main>
         {{!-- {{#if loggedIn}} --}}
@@ -53,5 +56,7 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
     </body>
+
 </html>
