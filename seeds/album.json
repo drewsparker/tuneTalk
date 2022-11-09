@@ -1,47 +1,587 @@
-[  
+[
+	{
+		"id" : "0ezwRysfWCrR5tDgpBwkIw",
+		"name" : "Hymn for the Weekend (Seeb Remix)",
+		"url" : "spotify:album:0ezwRysfWCrR5tDgpBwkIw",
+		"total_track" : 1,
+		"release_date" : "2016-03-25 00:00:00",
+		"artist_name" : "Coldplay",
+		"artist_id" : "4gzpq5DPGxSnKTe4SA8HAU"
+	},
 	{
 		"id" : "0mEeCuKJQ8Xh9tQ5dMm89X",
 		"name" : "The Most Beautiful Moment in Life Pt.1",
 		"url" : "spotify:album:0mEeCuKJQ8Xh9tQ5dMm89X",
 		"total_track" : null,
-		"release_date" : "2015-04-29 00:00:00",
+		"release_date" : "2015-04-29 05:00:00",
 		"artist_name" : "BTS",
 		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "0NvpeY8oCm6oIlhH5Jw4fo",
+		"name" : "What Goes Around...Comes Around",
+		"url" : "spotify:album:0NvpeY8oCm6oIlhH5Jw4fo",
+		"total_track" : 3,
+		"release_date" : "2006-12-19 00:00:00",
+		"artist_name" : "Justin Timberlake",
+		"artist_id" : "31TPClRtHm23RisEBtV3X7"
+	},
+	{
+		"id" : "0tcExuDWMQdBbwSpqN8Ku2",
+		"name" : "FutureSex/LoveSounds Deluxe Edition",
+		"url" : "spotify:album:0tcExuDWMQdBbwSpqN8Ku2",
+		"total_track" : 15,
+		"release_date" : "2006-09-13 00:00:00",
+		"artist_name" : "Justin Timberlake",
+		"artist_id" : "31TPClRtHm23RisEBtV3X7"
+	},
+	{
+		"id" : "0tcyDiVe5YVzXXocO1nk1m",
+		"name" : "Thagyan",
+		"url" : "spotify:album:0tcyDiVe5YVzXXocO1nk1m",
+		"total_track" : 1,
+		"release_date" : "2022-03-14 00:00:00",
+		"artist_name" : "Zain Zohaib",
+		"artist_id" : "0M4wzwZKh9SSHkOXYNvQlP"
+	},
+	{
+		"id" : "0xS0iOtxQRoJvfcFcJA5Gv",
+		"name" : "folklore",
+		"url" : "spotify:album:0xS0iOtxQRoJvfcFcJA5Gv",
+		"total_track" : 16,
+		"release_date" : "2020-07-24 00:00:00",
+		"artist_name" : "Taylor Swift",
+		"artist_id" : "06HL4z0CvFAxyc27GXpf02"
+	},
+	{
+		"id" : "0yDiMZdbFwO5lGB9Dq5wlL",
+		"name" : "Versace On The Floor (Bruno Mars vs. David Guetta)",
+		"url" : "spotify:album:0yDiMZdbFwO5lGB9Dq5wlL",
+		"total_track" : 1,
+		"release_date" : "2017-06-27 00:00:00",
+		"artist_name" : "Bruno Mars",
+		"artist_id" : "0du5cEVh5yTK9QJze8zA0C"
+	},
+	{
+		"id" : "0z3nweFUGrzH2UZ0pohPAn",
+		"name" : "The Hits Collection Volume One (Deluxe)",
+		"url" : "spotify:album:0z3nweFUGrzH2UZ0pohPAn",
+		"total_track" : 19,
+		"release_date" : "2010-11-22 00:00:00",
+		"artist_name" : "JAY-Z",
+		"artist_id" : "3nFkdlSjzX9mRTtwJOzDYB"
+	},
+	{
+		"id" : "19CvkGjYpifkdwgVJSbog2",
+		"name" : "Live in Buenos Aires",
+		"url" : "spotify:album:19CvkGjYpifkdwgVJSbog2",
+		"total_track" : 24,
+		"release_date" : "2018-12-07 00:00:00",
+		"artist_name" : "Coldplay",
+		"artist_id" : "4gzpq5DPGxSnKTe4SA8HAU"
+	},
+	{
+		"id" : "1CGZybDREh1zbTAV0oXNHH",
+		"name" : "Cold Play",
+		"url" : "spotify:album:1CGZybDREh1zbTAV0oXNHH",
+		"total_track" : 1,
+		"release_date" : "2021-02-23 00:00:00",
+		"artist_name" : "Steady",
+		"artist_id" : "0LM7T8Hxsb1cSFTtdWJTHR"
+	},
+	{
+		"id" : "1hq4Vrcbua3DDBLhuWFEVQ",
+		"name" : "Partition",
+		"url" : "spotify:album:1hq4Vrcbua3DDBLhuWFEVQ",
+		"total_track" : 1,
+		"release_date" : "2014-03-18 00:00:00",
+		"artist_name" : "Beyoncé",
+		"artist_id" : "6vWDO969PvNqNYHIOW5v0m"
+	},
+	{
+		"id" : "1LMcmxhxL1g2GXj0X3w3sQ",
+		"name" : "Young, Wild & Free (feat. Bruno Mars)",
+		"url" : "spotify:album:1LMcmxhxL1g2GXj0X3w3sQ",
+		"total_track" : 1,
+		"release_date" : "2011-10-21 00:00:00",
+		"artist_name" : "Snoop Dogg",
+		"artist_id" : "7hJcb9fa4alzcOq3EaNPoG"
+	},
+	{
+		"id" : "1NiyICGTp03PEz5PSShNkZ",
+		"name" : "Zayn",
+		"url" : "spotify:album:1NiyICGTp03PEz5PSShNkZ",
+		"total_track" : 4,
+		"release_date" : "2021-12-10 00:00:00",
+		"artist_name" : "stream",
+		"artist_id" : "3vSTWK38Ap0Z7Izm3NKom4"
+	},
+	{
+		"id" : "1q5UUWraL06jPz0jbVBP1M",
+		"name" : "Mentally Cheating",
+		"url" : "spotify:album:1q5UUWraL06jPz0jbVBP1M",
+		"total_track" : 1,
+		"release_date" : "2022-07-15 00:00:00",
+		"artist_name" : "Natalie Jane",
+		"artist_id" : "5bfglVyGJppmmNoC2rhBUG"
+	},
+	{
+		"id" : "1WWcacsiLhViXL44OCdtft",
+		"name" : "Jane 1-11",
+		"url" : "spotify:album:1WWcacsiLhViXL44OCdtft",
+		"total_track" : 11,
+		"release_date" : "2013-05-27 00:00:00",
+		"artist_name" : "Harold Budd",
+		"artist_id" : "3uOCouLFR4bVx0XeiQJSbl"
+	},
+	{
+		"id" : "1y2BKQo8sxWLFnRk7YYlif",
+		"name" : "Zayn",
+		"url" : "spotify:album:1y2BKQo8sxWLFnRk7YYlif",
+		"total_track" : 1,
+		"release_date" : "2020-07-27 00:00:00",
+		"artist_name" : "Yuli",
+		"artist_id" : "250pYGK6Poo6jUfokAUfEp"
+	},
+	{
+		"id" : "2aCT4cP1qg9NhPLvSg48N5",
+		"name" : "DON'T YOU WORRY (Farruko Remix) (with Farruko, David Guetta & Shakira)",
+		"url" : "spotify:album:2aCT4cP1qg9NhPLvSg48N5",
+		"total_track" : 1,
+		"release_date" : "2022-09-02 00:00:00",
+		"artist_name" : "Black Eyed Peas",
+		"artist_id" : "1yxSLGMDHlW21z4YXirZDS"
 	},
 	{
 		"id" : "2ds8iT4wkaN1Q1gZe1qcOD",
 		"name" : "The Most Beautiful Moment in Life Pt.2",
 		"url" : "spotify:album:2ds8iT4wkaN1Q1gZe1qcOD",
 		"total_track" : null,
-		"release_date" : "2015-11-30 00:00:00",
+		"release_date" : "2015-11-30 06:00:00",
 		"artist_name" : "BTS",
 		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "2M7C9yqPo24hBoGLQpAv5p",
+		"name" : "Amend",
+		"url" : "spotify:album:2M7C9yqPo24hBoGLQpAv5p",
+		"total_track" : 1,
+		"release_date" : "2022-01-30 00:00:00",
+		"artist_name" : "KA$$IU$",
+		"artist_id" : "0xli3BEXUnYn1AclkDVajx"
+	},
+	{
+		"id" : "2PRPxrCPAyV4Oq7SVvXCRD",
+		"name" : "Usher",
+		"url" : "spotify:album:2PRPxrCPAyV4Oq7SVvXCRD",
+		"total_track" : 1,
+		"release_date" : "2022-05-27 00:00:00",
+		"artist_name" : "Squeegee",
+		"artist_id" : "2DQJBQSIVoU16wI96o5mIi"
+	},
+	{
+		"id" : "2vf1K6KumbRZnRHa1JeKyD",
+		"name" : "Locked out of Heaven (Remix)",
+		"url" : "spotify:album:2vf1K6KumbRZnRHa1JeKyD",
+		"total_track" : 4,
+		"release_date" : "2013-01-21 00:00:00",
+		"artist_name" : "Bruno Mars",
+		"artist_id" : "0du5cEVh5yTK9QJze8zA0C"
+	},
+	{
+		"id" : "2xclonI4faQWl6lhqecGM5",
+		"name" : "That's What I Like (PARTYNEXTDOOR Remix)",
+		"url" : "spotify:album:2xclonI4faQWl6lhqecGM5",
+		"total_track" : 1,
+		"release_date" : "2017-04-18 00:00:00",
+		"artist_name" : "Bruno Mars",
+		"artist_id" : "0du5cEVh5yTK9QJze8zA0C"
+	},
+	{
+		"id" : "2Xoteh7uEpea4TohMxjtaq",
+		"name" : "evermore",
+		"url" : "spotify:album:2Xoteh7uEpea4TohMxjtaq",
+		"total_track" : 15,
+		"release_date" : "2020-12-11 00:00:00",
+		"artist_name" : "Taylor Swift",
+		"artist_id" : "06HL4z0CvFAxyc27GXpf02"
 	},
 	{
 		"id" : "35voVqYGkotyJ945O9egDY",
 		"name" : "Dark & Wild",
 		"url" : "spotify:album:35voVqYGkotyJ945O9egDY",
 		"total_track" : null,
-		"release_date" : "2014-08-20 00:00:00",
+		"release_date" : "2014-08-20 05:00:00",
 		"artist_name" : "BTS",
 		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "3GU8BzFEAdFSRjc8jZkL3S",
+		"name" : "La La Land (Original Motion Picture Soundtrack)",
+		"url" : "spotify:album:3GU8BzFEAdFSRjc8jZkL3S",
+		"total_track" : 15,
+		"release_date" : "2016-12-09 00:00:00",
+		"artist_name" : "Justin Hurwitz",
+		"artist_id" : "2snm3HmsnDUDxbIChdl2Oj"
+	},
+	{
+		"id" : "3hCiP4V5Mu3Y0Z8lb70iDp",
+		"name" : "EVERYTHING IS LOVE",
+		"url" : "spotify:album:3hCiP4V5Mu3Y0Z8lb70iDp",
+		"total_track" : 9,
+		"release_date" : "2018-06-16 00:00:00",
+		"artist_name" : "The Carters",
+		"artist_id" : "4fpTMHe34LC5t3h5ztK8qu"
+	},
+	{
+		"id" : "3ideAfrVvWpeZkKB9fOz81",
+		"name" : "My Way (25th Anniversary Edition)",
+		"url" : "spotify:album:3ideAfrVvWpeZkKB9fOz81",
+		"total_track" : 16,
+		"release_date" : "2022-09-16 00:00:00",
+		"artist_name" : "Usher",
+		"artist_id" : "23zg3TcAtWQy7J6upgbUnj"
+	},
+	{
+		"id" : "3j1xCJdBMCl6wYQXurz2tb",
+		"name" : "Vol.2... Hard Knock Life",
+		"url" : "spotify:album:3j1xCJdBMCl6wYQXurz2tb",
+		"total_track" : 14,
+		"release_date" : "1998-11-29 00:00:00",
+		"artist_name" : "JAY-Z",
+		"artist_id" : "3nFkdlSjzX9mRTtwJOzDYB"
+	},
+	{
+		"id" : "3k2ZR6pRDrqIqbbxfVdZrq",
+		"name" : "Zayn",
+		"url" : "spotify:album:3k2ZR6pRDrqIqbbxfVdZrq",
+		"total_track" : 6,
+		"release_date" : "2021-07-30 00:00:00",
+		"artist_name" : "It's Mo",
+		"artist_id" : "1tqSbpjIPgHxYrdiQOAeeX"
+	},
+	{
+		"id" : "3rWJsuu7ukoZZhp7YYkjNZ",
+		"name" : "Vol. 3... Life And Times Of S. Carter",
+		"url" : "spotify:album:3rWJsuu7ukoZZhp7YYkjNZ",
+		"total_track" : 16,
+		"release_date" : "1999-12-28 00:00:00",
+		"artist_name" : "JAY-Z",
+		"artist_id" : "3nFkdlSjzX9mRTtwJOzDYB"
+	},
+	{
+		"id" : "3vOgbDjgsZBAPwV2M3bNOj",
+		"name" : "The Marshall Mathers LP2",
+		"url" : "spotify:album:3vOgbDjgsZBAPwV2M3bNOj",
+		"total_track" : 16,
+		"release_date" : "2013-11-05 00:00:00",
+		"artist_name" : "Eminem",
+		"artist_id" : "7dGJo4pcD2V6oG8kP0tJRR"
+	},
+	{
+		"id" : "480AZOo2VQ1kf3GedAiKV9",
+		"name" : "Survivor",
+		"url" : "spotify:album:480AZOo2VQ1kf3GedAiKV9",
+		"total_track" : 18,
+		"release_date" : "2001-05-01 00:00:00",
+		"artist_name" : "Destiny's Child",
+		"artist_id" : "1Y8cdNmUJH7yBTd9yOvr5i"
+	},
+	{
+		"id" : "4894htPwC6zoiuTqUQwn4I",
+		"name" : "Midnights (3am Edition)",
+		"url" : "spotify:album:4894htPwC6zoiuTqUQwn4I",
+		"total_track" : 20,
+		"release_date" : "2022-10-21 00:00:00",
+		"artist_name" : "Taylor Swift",
+		"artist_id" : "06HL4z0CvFAxyc27GXpf02"
+	},
+	{
+		"id" : "48Squ1oYsMrjEGUKnmEHyp",
+		"name" : "En Extasis",
+		"url" : "spotify:album:48Squ1oYsMrjEGUKnmEHyp",
+		"total_track" : 14,
+		"release_date" : "1995-01-01 00:00:00",
+		"artist_name" : "Thalia",
+		"artist_id" : "23wEWD21D4TPYiJugoXmYb"
 	},
 	{
 		"id" : "4cmHvSMDrSRe2sLodew8sV",
 		"name" : "Butter (Holiday Remix)",
 		"url" : "spotify:album:4cmHvSMDrSRe2sLodew8sV",
 		"total_track" : null,
-		"release_date" : "2021-12-03 00:00:00",
+		"release_date" : "2021-12-03 06:00:00",
 		"artist_name" : "BTS",
 		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "4eYa2RInVraNRxEMtYFxUp",
+		"name" : "Messe Gregoriane (De Angelis, Cum Iubilo, Orbis Factor, Cunctipotens Genitor Deus)",
+		"url" : "spotify:album:4eYa2RInVraNRxEMtYFxUp",
+		"total_track" : 19,
+		"release_date" : "2012-04-05 00:00:00",
+		"artist_name" : "Nova Schola Gregoriana",
+		"artist_id" : "4s9ZyTwYcLQhp3JlSXyOEi"
+	},
+	{
+		"id" : "4HsLpiXxuq5kxvMEALLyrh",
+		"name" : "Unapologetic (Deluxe Version)",
+		"url" : "spotify:album:4HsLpiXxuq5kxvMEALLyrh",
+		"total_track" : 17,
+		"release_date" : "2013-01-01 00:00:00",
+		"artist_name" : "Rihanna",
+		"artist_id" : "5pKCCKE2ajJHZ9KAiaK11H"
+	},
+	{
+		"id" : "4IcQ1ni07PmlOenqwf6MgG",
+		"name" : "Me Gusta",
+		"url" : "spotify:album:4IcQ1ni07PmlOenqwf6MgG",
+		"total_track" : 1,
+		"release_date" : "2020-01-13 00:00:00",
+		"artist_name" : "Shakira",
+		"artist_id" : "0EmeFodog0BfCgMzAIvKQp"
+	},
+	{
+		"id" : "4JYjZh7R8F7Na5x1lVqOl9",
+		"name" : "Flags",
+		"url" : "spotify:album:4JYjZh7R8F7Na5x1lVqOl9",
+		"total_track" : 1,
+		"release_date" : "2020-12-21 00:00:00",
+		"artist_name" : "Coldplay",
+		"artist_id" : "4gzpq5DPGxSnKTe4SA8HAU"
+	},
+	{
+		"id" : "4QvzYMXuU58cNpFrRQ9Aqi",
+		"name" : "가을 아침 [Gaeul Achim] : Autumn morning",
+		"url" : "spotify:album:4QvzYMXuU58cNpFrRQ9Aqi",
+		"total_track" : 1,
+		"release_date" : "2017-09-22 00:00:00",
+		"artist_name" : "IU",
+		"artist_id" : "3HqSLMAZ3g3d5poNaI7GOU"
+	},
+	{
+		"id" : "4S8F794ucXJcAtycwOZgR9",
+		"name" : "Bitch Better Have My Money",
+		"url" : "spotify:album:4S8F794ucXJcAtycwOZgR9",
+		"total_track" : 1,
+		"release_date" : "2015-03-26 00:00:00",
+		"artist_name" : "Rihanna",
+		"artist_id" : "5pKCCKE2ajJHZ9KAiaK11H"
+	},
+	{
+		"id" : "4XBfFj0WYyh5mBtU61EdyY",
+		"name" : "Unapologetic",
+		"url" : "spotify:album:4XBfFj0WYyh5mBtU61EdyY",
+		"total_track" : 14,
+		"release_date" : "2012-12-11 00:00:00",
+		"artist_name" : "Rihanna",
+		"artist_id" : "5pKCCKE2ajJHZ9KAiaK11H"
+	},
+	{
+		"id" : "55228F4QRlYDzJ4H02tDHA",
+		"name" : "Mi Gente (feat. Beyoncé)",
+		"url" : "spotify:album:55228F4QRlYDzJ4H02tDHA",
+		"total_track" : 1,
+		"release_date" : "2017-09-28 00:00:00",
+		"artist_name" : "J Balvin",
+		"artist_id" : "1vyhD5VmyZ7KMfW5gqLgo5"
+	},
+	{
+		"id" : "5bB2nClfkdlG1ekRQGw8zT",
+		"name" : "Nitpicking",
+		"url" : "spotify:album:5bB2nClfkdlG1ekRQGw8zT",
+		"total_track" : 2,
+		"release_date" : "2010-06-03 00:00:00",
+		"artist_name" : "IU",
+		"artist_id" : "3HqSLMAZ3g3d5poNaI7GOU"
+	},
+	{
+		"id" : "5EdGgMlsJ7bv8IUqkaaPZN",
+		"name" : "Shakira In Concert: El Dorado World Tour",
+		"url" : "spotify:album:5EdGgMlsJ7bv8IUqkaaPZN",
+		"total_track" : 20,
+		"release_date" : "2019-11-13 00:00:00",
+		"artist_name" : "Shakira",
+		"artist_id" : "0EmeFodog0BfCgMzAIvKQp"
+	},
+	{
+		"id" : "5YXgG42pBV1YLzbqzk0uUo",
+		"name" : "Cold Play",
+		"url" : "spotify:album:5YXgG42pBV1YLzbqzk0uUo",
+		"total_track" : 1,
+		"release_date" : "2019-05-09 00:00:00",
+		"artist_name" : "F4rty Oz",
+		"artist_id" : "6IL31lTYNQJf6VkEhlvXGN"
+	},
+	{
+		"id" : "62SWIKrov7HPXU0Jpc6LY1",
+		"name" : "Stay With Me (with Justin Timberlake, Halsey, & Pharrell)",
+		"url" : "spotify:album:62SWIKrov7HPXU0Jpc6LY1",
+		"total_track" : 1,
+		"release_date" : "2022-07-15 00:00:00",
+		"artist_name" : "Calvin Harris",
+		"artist_id" : "7CajNmpbOovFoOoasH2HaY"
+	},
+	{
+		"id" : "661EtVkZYuH41VXXuOMBbo",
+		"name" : "Try Everything (From \"Zootropolis\")",
+		"url" : "spotify:album:661EtVkZYuH41VXXuOMBbo",
+		"total_track" : 1,
+		"release_date" : "2016-02-05 00:00:00",
+		"artist_name" : "Shakira",
+		"artist_id" : "0EmeFodog0BfCgMzAIvKQp"
 	},
 	{
 		"id" : "66J1OXSaS3hBZASOV3el8t",
 		"name" : "FACE YOURSELF",
 		"url" : "spotify:album:66J1OXSaS3hBZASOV3el8t",
 		"total_track" : null,
-		"release_date" : "2018-04-04 00:00:00",
+		"release_date" : "2018-04-04 05:00:00",
 		"artist_name" : "BTS",
 		"artist_id" : "3Nrfpe0tUJi4K4DXYWgMUX"
+	},
+	{
+		"id" : "6aWJgsbvVPQR2HgPztf4qe",
+		"name" : "Last Last",
+		"url" : "spotify:album:6aWJgsbvVPQR2HgPztf4qe",
+		"total_track" : 1,
+		"release_date" : "2022-05-12 00:00:00",
+		"artist_name" : "Burna Boy",
+		"artist_id" : "3wcj11K77LjEY1PkEazffa"
+	},
+	{
+		"id" : "6bnDvfVdO3LarvcpWEzmeD",
+		"name" : "Versus",
+		"url" : "spotify:album:6bnDvfVdO3LarvcpWEzmeD",
+		"total_track" : 9,
+		"release_date" : "2010-08-24 00:00:00",
+		"artist_name" : "Usher",
+		"artist_id" : "23zg3TcAtWQy7J6upgbUnj"
+	},
+	{
+		"id" : "6BPE7mW2Spafw6VKj0WhUw",
+		"name" : "Design Of A Decade 1986/1996",
+		"url" : "spotify:album:6BPE7mW2Spafw6VKj0WhUw",
+		"total_track" : 16,
+		"release_date" : "1995-10-10 00:00:00",
+		"artist_name" : "Janet Jackson",
+		"artist_id" : "4qwGe91Bz9K2T8jXTZ815W"
+	},
+	{
+		"id" : "6MuWCR3WPjwyKhqsTKLZ3z",
+		"name" : "Feel Something",
+		"url" : "spotify:album:6MuWCR3WPjwyKhqsTKLZ3z",
+		"total_track" : 12,
+		"release_date" : "2017-06-23 00:00:00",
+		"artist_name" : "Jaymes Young",
+		"artist_id" : "6QrQ7OrISRYIfS5mtacaw2"
+	},
+	{
+		"id" : "6mZVOi06uAl1fS1pvZnZ7K",
+		"name" : "Dusk Till Dawn (The Remixes) (feat. Sia)",
+		"url" : "spotify:album:6mZVOi06uAl1fS1pvZnZ7K",
+		"total_track" : 3,
+		"release_date" : "2017-09-29 00:00:00",
+		"artist_name" : "ZAYN",
+		"artist_id" : "5ZsFI1h6hIdQRw2ti0hz81"
+	},
+	{
+		"id" : "6x9s2ObPdpATZgrwxsk9c0",
+		"name" : "Red (Taylor's Version)",
+		"url" : "spotify:album:6x9s2ObPdpATZgrwxsk9c0",
+		"total_track" : 30,
+		"release_date" : "2021-11-12 00:00:00",
+		"artist_name" : "Taylor Swift",
+		"artist_id" : "06HL4z0CvFAxyc27GXpf02"
+	},
+	{
+		"id" : "70f70xLCpH7wHaVvB2oZT9",
+		"name" : "Believe (Deluxe Edition)",
+		"url" : "spotify:album:70f70xLCpH7wHaVvB2oZT9",
+		"total_track" : 17,
+		"release_date" : "2012-06-15 00:00:00",
+		"artist_name" : "Justin Bieber",
+		"artist_id" : "1uNFoZAHBGtllmzznpCI3s"
+	},
+	{
+		"id" : "7CkalyLeka8LiJvKBcmwkB",
+		"name" : "Discipline",
+		"url" : "spotify:album:7CkalyLeka8LiJvKBcmwkB",
+		"total_track" : 22,
+		"release_date" : "2008-01-01 00:00:00",
+		"artist_name" : "Janet Jackson",
+		"artist_id" : "4qwGe91Bz9K2T8jXTZ815W"
+	},
+	{
+		"id" : "7cKzLeTiorxLgrx1RyGf9P",
+		"name" : "Usher",
+		"url" : "spotify:album:7cKzLeTiorxLgrx1RyGf9P",
+		"total_track" : 1,
+		"release_date" : "2022-03-26 00:00:00",
+		"artist_name" : "Dread Redd",
+		"artist_id" : "0vbApYe0wcH5mE8fvAqhWH"
+	},
+	{
+		"id" : "7eJGJIPw6kPngdBin2b3iL",
+		"name" : "Desde Mis Ojos (Remix)",
+		"url" : "spotify:album:7eJGJIPw6kPngdBin2b3iL",
+		"total_track" : 1,
+		"release_date" : "2022-05-12 00:00:00",
+		"artist_name" : "Chris Lebron",
+		"artist_id" : "3GPTvhZ8XfH7WkHXidvELk"
+	},
+	{
+		"id" : "7FAE4ouRCAkeD6rjCmA8DE",
+		"name" : "Can't Love You Anymore",
+		"url" : "spotify:album:7FAE4ouRCAkeD6rjCmA8DE",
+		"total_track" : 1,
+		"release_date" : "2017-04-07 00:00:00",
+		"artist_name" : "IU",
+		"artist_id" : "3HqSLMAZ3g3d5poNaI7GOU"
+	},
+	{
+		"id" : "7J5iE51Mk97Mf0BjjwYXUZ",
+		"name" : "Jaane Tu... Ya Jaane Na",
+		"url" : "spotify:album:7J5iE51Mk97Mf0BjjwYXUZ",
+		"total_track" : 8,
+		"release_date" : "2008-05-21 00:00:00",
+		"artist_name" : "A.R. Rahman",
+		"artist_id" : "1mYsTxnqsietFxj1OgoGbG"
+	},
+	{
+		"id" : "7kUuNU2LRmr9XbwLHXU9UZ",
+		"name" : "The Lion King: The Gift [Deluxe Edition]",
+		"url" : "spotify:album:7kUuNU2LRmr9XbwLHXU9UZ",
+		"total_track" : 17,
+		"release_date" : "2020-07-31 00:00:00",
+		"artist_name" : "Beyoncé",
+		"artist_id" : "6vWDO969PvNqNYHIOW5v0m"
+	},
+	{
+		"id" : "7sgSdEn3MXg3JRQ8RfBVgR",
+		"name" : "Usher",
+		"url" : "spotify:album:7sgSdEn3MXg3JRQ8RfBVgR",
+		"total_track" : 1,
+		"release_date" : "2022-02-17 00:00:00",
+		"artist_name" : "Backstreet Six",
+		"artist_id" : "1skfNWjfejKIrlCpxLZ0aW"
+	},
+	{
+		"id" : "7v7pe5vZQPWB5zW0JrKRiw",
+		"name" : "folklore (deluxe version)",
+		"url" : "spotify:album:7v7pe5vZQPWB5zW0JrKRiw",
+		"total_track" : 17,
+		"release_date" : "2020-08-17 00:00:00",
+		"artist_name" : "Taylor Swift",
+		"artist_id" : "06HL4z0CvFAxyc27GXpf02"
+	},
+	{
+		"id" : "7yBnuW3SpMKy3EB9iU0C7p",
+		"name" : "Treasure Remix EP",
+		"url" : "spotify:album:7yBnuW3SpMKy3EB9iU0C7p",
+		"total_track" : 5,
+		"release_date" : "2013-08-13 00:00:00",
+		"artist_name" : "Bruno Mars",
+		"artist_id" : "0du5cEVh5yTK9QJze8zA0C"
 	}
 ]

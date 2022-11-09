@@ -24,7 +24,7 @@ router.get('/:id',async(req, res)=>{
             album_id:req.params.id,
         },
     });
-    if(!albumData){
+    if(!albumData[0]){
         spotifyApi.getAlbum(req.params.id)
         .then((data) => {
             console.log(data.body.tracks.items);
@@ -40,13 +40,14 @@ router.get('/:id',async(req, res)=>{
                     artist_id:track.artists[0].id, 
                 });
                 if(!newTracks){
-                    alert("fail to create");
+                    res.status(400).json({ message: 'Fail to insert' });
+                    return;
                 }   
                 else {
                     console.log(newTracks);
                  }                    
             });
-            res.render('track');
+            res.redirect('/api/:id');
 
         })
         .catch(function(err){

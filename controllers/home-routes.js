@@ -13,7 +13,6 @@ var spotifyApi = new SpotifyWebApi({
 
 spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
 
-
 router.get('/', async (req, res) => {
     res.status(200).render('homepage');
 });
@@ -21,23 +20,23 @@ router.get('/', async (req, res) => {
 //when search artist name, Check the db first,
 //if the data not found, request API call, and save it to database.
 //Save top 5 albums of that artist. and render to album pages
-router.post('/search', async (req, res) => {
+router.get('/search/:searchName', async (req, res) => {
     //check if data exist
     const albumData = await Album.findAll({
         where: {
-            artist_name: req.body.searchName,
+            artist_name: req.params.searchName,
         },
     });
-    // console.log(albumData);
-    if (!albumData) {
+    if (!albumData[0]) { //if albumData=[] ->!albumData=false
         //Spotify API call request
-        spotifyApi.searchAlbums(req.body.searchName, { limit: 5, offset: 20 })
-            .then((data) => {
+        spotifyApi.searchAlbums(req.params.searchName, { limit: 5, offset: 20 })
+            .then(async(data) => {
                 console.log('search albums', data.body.albums.items);
 
-                data.body.albums.items.forEach(async (album) => {
+                const albumData= await data.body.albums.items.map(async (album) => {
                     console.log(`(${album.id},"${album.name}","${album.uri}",${album.total_tracks},${album.release_date},"${album.artists[0].name}",${album.artists[0].id}`)
-                    const newAlbum = await Album.create({
+                    const newAlbum = await Album.findOrCreate({
+                        where:{
                         id: album.id,
                         name: album.name,
                         url: album.uri,
@@ -45,19 +44,34 @@ router.post('/search', async (req, res) => {
                         release_date: album.release_date,
                         artist_name: album.artists[0].name,
                         artist_id: album.artists[0].id,
-                    });
-                    if (!newAlbum) {
-                        alert("fail to create");
                     }
-                    else {
-                        console.log(newAlbum);
-                    }
-
                 });
-                // const albums = data.body.albums.map((album) => album.get({ plain: true }));
-                // console.log(data.body.albums);
+                    if (!newAlbum) {
+                        res.status(400).json({message:"fail to Insert"});
+                        return;
+                    }
+                    return newAlbum;
+                });
 
-                res.render('album');
+                //Get the data from DB and render it to album handlebar
+                // const albumData = await Album.findAll({
+                //     where: {
+                //         artist_name: req.params.searchName,
+                //     },
+                // });
+                // console.log("albumData",albumData);
+                // const albums = albumData.map((album) => album.get({ plain: true }));
+                // console.log(albums);
+
+                // console.log(data.body.albums.items);
+                console.log("items",data.body.albums.items);
+                // const albums=data.body.albums.items;
+
+                const albums = data.body.albums.items.map((album) => album.get({ plain: true }));
+                res.status(200).render('album',{albums});
+                
+                // res.redirect(`/search/${req.params.searchName}`);
+                
             },
                 function (err) {
                     console.error(err);
@@ -66,12 +80,22 @@ router.post('/search', async (req, res) => {
      }
     //if data exist
     else{
-            // console.log(albumData);
             const albums = albumData.map((album) => album.get({ plain: true }));
+            console.log(albums);
             res.status(200).render('album',{albums});
     }
-
-
 });
+
+
+
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+    
+    res.render('login');
+});
+
 
 module.exports = router;
