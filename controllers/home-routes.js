@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const withAuth = require('../utils/withAuth');
-const { Album } = require('../models');
+const { Album,Comment,Track,User } = require('../models');
 require('dotenv').config();
 var SpotifyWebApi = require('spotify-web-api-node');
 const { findAll } = require('../models/Users');
@@ -14,7 +14,36 @@ var spotifyApi = new SpotifyWebApi({
 
 
 router.get('/', async (req, res) => {
-    res.status(200).render('homepage');
+
+    const commentData= await Comment.findAll({
+        include:[
+           {model:Track},{model:User}
+        ],
+        limit:5,
+        // db.itemHistory.findAll({
+        //     attributes: [
+        //         'id',
+        //         'price',
+        //         'itemId',
+        //         [db.Sequelize.fn('max', db.Sequelize.col('date')), 'date']
+        //     ],
+        //     group: ['itemId'],
+        //     limit: 1
+        // }).then(function(histories) {
+        //     console.log(histories);
+        // });
+
+    });
+    const comments = commentData.map((comment) => comment.get({ plain: true }));
+    console.log(comments);
+    
+    res.status(200).render('homepage',{
+        comments,
+        logged_in: req.session.logged_in,
+        user_id:req.session.user_id,});
+
+    
+  
 });
 
 //when search artist name, Check the db first,
@@ -30,7 +59,7 @@ router.get('/search/:searchName', async (req, res) => {
     if (!albumData[0]) { //if albumData=[] ->!albumData=false
         //Spotify API call request
         spotifyApi.setAccessToken(process.env.CLIENT_TOKEN); 
-        
+
         spotifyApi.searchAlbums(req.params.searchName, { limit: 5, offset: 20 })
             .then(async(data) => {
                 console.log('search albums', data.body.albums.items);
