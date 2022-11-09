@@ -19,7 +19,7 @@ const { findAll } = require('../../models/Users');
 router.post('/', async(req,res)=>{
 
     try {
-        const  = await Comment.create({
+        const  newComment= await Comment.create({
           ...req.body, //track_id, text
           user_id: req.session.user_id,
         });
