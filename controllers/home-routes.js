@@ -11,7 +11,7 @@ var spotifyApi = new SpotifyWebApi({
     redirectUri: 'http://www.example.com/callback'
 });
 
-spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
+
 
 router.get('/', async (req, res) => {
     res.status(200).render('homepage');
@@ -29,6 +29,8 @@ router.get('/search/:searchName', async (req, res) => {
     });
     if (!albumData[0]) { //if albumData=[] ->!albumData=false
         //Spotify API call request
+        spotifyApi.setAccessToken(process.env.CLIENT_TOKEN); 
+        
         spotifyApi.searchAlbums(req.params.searchName, { limit: 5, offset: 20 })
             .then(async(data) => {
                 console.log('search albums', data.body.albums.items);
@@ -82,7 +84,11 @@ router.get('/search/:searchName', async (req, res) => {
     else{
             const albums = albumData.map((album) => album.get({ plain: true }));
             console.log(albums);
-            res.status(200).render('album',{albums});
+            res.status(200).render('album',{
+                albums,
+                logged_in: req.session.logged_in,
+                user_id:req.session.user_id,
+             });
     }
 });
 
