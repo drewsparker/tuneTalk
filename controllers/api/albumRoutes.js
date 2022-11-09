@@ -12,7 +12,6 @@ var spotifyApi = new SpotifyWebApi({
     redirectUri: 'http://www.example.com/callback'
 });
 
-spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
 
 router.get('/:id',async(req, res)=>{
 
@@ -25,6 +24,7 @@ router.get('/:id',async(req, res)=>{
         },
     });
     if(!albumData[0]){
+        spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
         spotifyApi.getAlbum(req.params.id)
         .then((data) => {
             console.log(data.body.tracks.items);
@@ -47,7 +47,7 @@ router.get('/:id',async(req, res)=>{
                     console.log(newTracks);
                  }                    
             });
-            res.redirect('/api/:id');
+            res.json('track');
 
         })
         .catch(function(err){
@@ -63,9 +63,6 @@ router.get('/:id',async(req, res)=>{
 
     }
 
-
-
-        
         
 
 });
