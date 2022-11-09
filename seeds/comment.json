@@ -1,5 +1,8 @@
+[{
+    "text" : "I love this song",
+    "track_id": 1
+},
 {
     "text" : "I love this song",
-    "user_id" : 1,
-    "tracks_id": 1,
-}
+    "track_id": 3
+}]

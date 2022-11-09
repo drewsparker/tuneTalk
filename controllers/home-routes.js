@@ -33,14 +33,15 @@ router.post('/search', async (req, res) => {
         //Spotify API call request
         spotifyApi.searchAlbums(req.body.searchName, { limit: 5, offset: 20 })
             .then((data) => {
-                console.log('search albums', data.body);
+                console.log('search albums', data.body.albums.items);
 
                 data.body.albums.items.forEach(async (album) => {
+                    console.log(`(${album.id},"${album.name}","${album.uri}",${album.total_tracks},${album.release_date},"${album.artists[0].name}",${album.artists[0].id}`)
                     const newAlbum = await Album.create({
                         id: album.id,
                         name: album.name,
                         url: album.uri,
-                        total_tracks: album.total_tracks,
+                        total_track: album.total_tracks,
                         release_date: album.release_date,
                         artist_name: album.artists[0].name,
                         artist_id: album.artists[0].id,
@@ -53,16 +54,16 @@ router.post('/search', async (req, res) => {
                     }
 
                 });
-                const albums = data.body.albums.map((album) => album.get({ plain: true }));
+                // const albums = data.body.albums.map((album) => album.get({ plain: true }));
                 // console.log(data.body.albums);
 
-                res.render('homepage', { albums });
+                res.render('album');
             },
                 function (err) {
                     console.error(err);
                 }
             );
-    }
+     }
     //if data exist
     else{
             // console.log(albumData);

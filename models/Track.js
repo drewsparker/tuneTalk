@@ -10,17 +10,30 @@ Track.init(
       allowNull: false,
       autoIncrement: true,
       primaryKey:true,
-    },
+    },             
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    track_number:{
+        type:DataTypes.INTEGER,
+        allowNull: false,
+    },
+    duration_ms:{
+        type:DataTypes.INTEGER,
+        allowNull: false,
+    },
+    uri:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+
     album_id:{
         type: DataTypes.STRING,
-        references:{
-            model:'album',
-            key:'id',
-        }
+        // references:{
+        //     model:'album',
+        //     key:'id',
+        // }
     },
     artist_id:{
         type: DataTypes.STRING,

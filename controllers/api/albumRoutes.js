@@ -1,59 +1,108 @@
 const router = require('express').Router();
-const { Album,Track } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { Album,Track,Comment } = require('../../models');
+const withAuth = require('../../utils/withAuth');
 
-// router.get('/albums/:id',async(req, res)=>{
+require('dotenv').config();
+var SpotifyWebApi = require('spotify-web-api-node');
+const { fdatasync } = require('fs');
 
-//     const trackData = await Track.findByPk(req.params.id
-//     );
-//     console.log(albumData);
-//     if (!albumData) {
-//         //Spotify API call request
-//         spotifyApi.searchAlbums(req.body.searchName, { limit: 5, offset: 20 })
-//             .then((data) => {
-//                 console.log('search albums', data.body);
+var spotifyApi = new SpotifyWebApi({
+    clientId: process.env.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET,
+    redirectUri: 'http://www.example.com/callback'
+});
 
-//                 data.body.albums.items.forEach(async (album) => {
-//                     const newAlbum = await Album.create({
-//                         id: album.id,
-//                         name: album.name,
-//                         url: album.uri,
-//                         total_tracks: album.total_tracks,
-//                         release_date: album.release_date,
-//                         artist_name: album.artists[0].name,
-//                         artist_id: album.artists[0].id,
-//                     });
-//                     if (!newAlbum) {
-//                         alert("fail to create");
-//                     }
-//                     else {
-//                         console.log(newAlbum);
-//                     }
+spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
 
+router.get('/:id',async(req, res)=>{
+
+    const albumData= await Track.findAll({
+        include:[
+           {model:Comment}
+        ],
+        where:{
+            album_id:req.params.id,
+        },
+    });
+    if(!albumData){
+        spotifyApi.getAlbum(req.params.id)
+        .then((data) => {
+            console.log(data.body.tracks.items);
+            data.body.tracks.items.forEach(async(track) => {
+                console.log(track.name,track.track_number,track.duration_ms,track.uri,req.body.id,track.artists[0].id);
+                
+                const newTracks=await Track.create({
+                    name : track.name,
+                    track_number : track.track_number,
+                    duration_ms : track.duration_ms,
+                    uri : track.uri,
+                    album_id:req.params.id,
+                    artist_id:track.artists[0].id, 
+                });
+                if(!newTracks){
+                    alert("fail to create");
+                }   
+                else {
+                    console.log(newTracks);
+                 }                    
+            });
+            res.render('track');
+
+        })
+        .catch(function(err){
+            res.status(500).json(err);
+        });
+    }
+    //if data exist
+    else{
+
+        const tracks = albumData.map((track) => track.get({ plain: true }));
+        console.log(tracks);
+        res.status(200).render('track',{tracks});
+
+    }
+
+
+
+        
+        
+
+});
+// router.post('/',async(req, res)=>{
+
+//         spotifyApi.getAlbum(req.body.id)
+//         .then(function(data) {
+//             res.json(data.body);
+//             console.log(data.body.tracks.items);
+//             data.body.tracks.items.forEach(async(track) => {
+//                 console.log(track.name,track.track_number,track.duration_ms,track.uri,req.body.id,track.artists[0].id);
+                
+//                 const newTracks=await Track.create({
+//                     name : track.name,
+//                     track_number : track.track_number,
+//                     duration_ms : track.duration_ms,
+//                     uri : track.uri,
+//                     album_id:req.body.id,
+//                     artist_id:track.artists[0].id, 
 //                 });
-//                 const albums = data.body.albums.map((album) => album.get({ plain: true }));
-//                 // console.log(data.body.albums);
+//                 if(!newTracks){
+//                     alert("fail to create");
+//                 }   
+//                 else {
+//                     console.log(newTracks);
+//                  }                    
+//             });
+//             res.json(data.body.tracks.items);
 
-//                 res.render('homepage', {albums});
-//             },
-//                 function (err) {
-//                     console.error(err);
-//                 }
-//             );
-//     }
-//     //if data exist
-//     else{
-//             // console.log(albumData);
-//             const albums = albumData.map((album) => album.get({ plain: true }));
-//             console.log(albums);
-//             res.render('homepage', { albums }); //add render data from db
-//     }
+//         })
+//         .catch(function(err){
+//             res.status(500).json(err);
+//         });
 
-
-
-
+        
 
 // });
+
 
 
 
