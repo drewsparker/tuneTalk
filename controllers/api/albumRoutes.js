@@ -47,7 +47,7 @@ router.get('/:id',async(req, res)=>{
                     console.log(newTracks);
                  }                    
             });
-            res.redirect('/api/:id');
+            res.json('track');
 
         })
         .catch(function(err){
@@ -63,9 +63,6 @@ router.get('/:id',async(req, res)=>{
 
     }
 
-
-
-        
         
 
 });

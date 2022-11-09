@@ -26,6 +26,7 @@ Track.init(
     uri:{
         type: DataTypes.STRING,
         allowNull: false,
+        unique:true,
     },
 
     album_id:{
