@@ -16,18 +16,7 @@ router.get('/', async (req, res) => {
             { model: Track }, { model: User }
         ],
         limit: 5,
-        // db.itemHistory.findAll({
-        //     attributes: [
-        //         'id',
-        //         'price',
-        //         'itemId',
-        //         [db.Sequelize.fn('max', db.Sequelize.col('date')), 'date']
-        //     ],
-        //     group: ['itemId'],
-        //     limit: 1
-        // }).then(function(histories) {
-        //     console.log(histories);
-        // });
+        order : [['updatedAt', 'DESC']],
 
     });
     const comments = commentData.map((comment) => comment.get({ plain: true }));
@@ -46,83 +35,91 @@ router.get('/', async (req, res) => {
 //if the data not found, request API call, and save it to database.
 //Save top 5 albums of that artist. and render to album pages
 router.get('/search/:searchName', async (req, res) => {
+    try {
 
-    //check if data existc
-    console.log(req.params.searchName);
-    const albumData = await Album.findAll({
-        where: {
-            artist_name: req.params.searchName,
-        },
-    });
-    console.log('albuData', albumData[0]);
-    if (!albumData[0]) {
-        console.log("API request");
-        //Spotify API call request
-        var spotifyApi = new SpotifyWebApi({
-            clientId: process.env.CLIENT_ID,
-            clientSecret: process.env.CLIENT_SECRET,
-            redirectUri: 'http://www.example.com/callback'
-        });
-        spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
-
-        spotifyApi.searchAlbums(req.params.searchName, { limit: 5, offset: 20 })
-            .then(async (data) => {
-                console.log('search albums', data.body.albums.items);
-
-                const albumData = await data.body.albums.items.map(async (album) => {
-                    const newAlbum = await Album.findOrCreate({
-                        where: {
-                            id: album.id,
-                            name: album.name,
-                            url: album.uri,
-                            total_track: album.total_tracks,
-                            release_date: album.release_date,
-                            artist_name: album.artists[0].name,
-                            artist_id: album.artists[0].id,
-                        }
-                    });
-                    if (!newAlbum) {
-                        res.status(400).json({ message: "fail to Insert" });
-                        return;
-                    }
-                    return newAlbum;
-                });
-
-                //Get the data from DB and render it to album handlebar
-                // const albumData = await Album.findAll({
-                //     where: {
-                //         artist_name: req.params.searchName,
-                //     },
-                // });
-                // console.log("albumData",albumData);
-                // const albums = albumData.map((album) => album.get({ plain: true }));
-                // console.log(albums);
-
-                // console.log(data.body.albums.items);
-                console.log("items", data.body.albums.items);
-                // const albums=data.body.albums.items;
-
-                const albums = data.body.albums.items.map((album) => album.get({ plain: true }));
-                res.status(200).render('album', { albums });
-
-                // res.redirect(`/search/${req.params.searchName}`);
-
+        //check if data exist
+        console.log(req.params.searchName);
+        const albumData = await Album.findAll({
+            where: {
+                artist_name: req.params.searchName,
             },
-                function (err) {
-                    console.error(err);
-                }
-            );
-    }
-    //if data exist
-    else {
-        console.log("get data from DB");
-        const albums = albumData.map((album) => album.get({ plain: true }));
-        console.log(albums);
-        res.status(200).render('album', {
-            albums,
-            logged_in: req.session.logged_in,
-            user_id: req.session.user_id,
         });
+
+        console.log('albumData', albumData[0]);
+        // if (!albumData[0]) {
+        //     console.log("API request");
+        //     //Spotify API call request
+        //     var spotifyApi = new SpotifyWebApi({
+        //         clientId: process.env.CLIENT_ID,
+        //         clientSecret: process.env.CLIENT_SECRET,
+        //         redirectUri: 'http://www.example.com/callback'
+        //     });
+        //     spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
+        //     console.log(req.params.searchName);
+
+        //     await spotifyApi.searchAlbums(req.params.searchName, { limit: 5, offset: 20 })
+        //         .then(async (data) => {
+        //             console.log('search albums', data.body.albums.items);
+
+        //             const albumData = await data.body.albums.items.map(async (album) => {
+        //                 const newAlbum = await Album.findOrCreate({
+        //                     where: {
+        //                         id: album.id,
+        //                         name: album.name,
+        //                         url: album.uri,
+        //                         total_track: album.total_tracks,
+        //                         release_date: album.release_date,
+        //                         artist_name: album.artists[0].name,
+        //                         artist_id: album.artists[0].id,
+        //                     }
+        //                 });
+        //                 if (!newAlbum) {
+        //                     res.status(400).json({ message: "fail to Insert" });
+        //                     return;
+        //                 }
+        //                 return newAlbum;
+        //             });
+
+        //             //Get the data from DB and render it to album handlebar
+        //             // const albumData = await Album.findAll({
+        //             //     where: {
+        //             //         artist_name: req.params.searchName,
+        //             //     },
+        //             // });
+        //             // console.log("albumData",albumData);
+        //             // const albums = albumData.map((album) => album.get({ plain: true }));
+        //             // console.log(albums);
+
+        //             // console.log(data.body.albums.items);
+
+        //             console.log("items", data.body.albums.items);
+        //             // const albums=data.body.albums.items;
+        //             res.status(200).render('album', { albums: data.body.albums.items });
+
+        //             // res.redirect(`/search/${req.params.searchName}`);
+
+        //         },
+        //             function (err) {
+
+        //                 console.error(err);
+        //             }
+        //         );
+        //     res.status(200).render('album');
+        // }
+        // //if data exist
+        // else {
+            console.log("get data from DB");
+            const albums = albumData.map((album) => album.get({ plain: true }));
+            console.log(albums);
+            res.status(200).render('album', {
+                albums,
+                logged_in: req.session.logged_in,
+                user_id: req.session.user_id,
+            });
+        // }
+    }
+    catch (error) {
+        res.status(500).json({ message: "fail" });
     }
 });
 
@@ -137,25 +134,32 @@ router.get('/login', (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/profile', /*withAuth,*/ async (req, res) => {
     try {
-      // Find the logged in user based on the session ID
-      const userData = await User.findByPk(req.session.user_id, {
-        attributes: { exclude: ['password'] },
-        include: [{ model: Comment },],   //Like should be added
-      });
-  
-      const user = userData.get({ plain: true });
-      console.log(user);
-  
-      res.render('profile', {
-        ...user,
-        logged_in: true
-      });
+
+        const commentData = await Comment.findAll({
+            where: {
+                user_id: 2
+                // user_id:req.session.user_id
+            },
+            include: [{ model: Track }, {
+                model: User,
+                attributes: { exclude: ['password'] }
+            }]
+        });
+
+
+        const comments = commentData.map((comment) => comment.get({ plain: true }));
+        res.json(comments);
+
+
+        //   res.render('profile', {
+        //     comments
+        //   });
     } catch (err) {
-      res.status(500).json(err);
+        res.status(500).json(err);
     }
-  });
+});
 
 
 module.exports = router;
