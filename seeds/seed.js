@@ -26,12 +26,6 @@ const seedDatabase = async () => {
   });
 
 
-  // for (const track of trackData) {
-  //   await Track.create({
-  //     ...track,
-  //   //   user_id: users[Math.floor(Math.random() * users.length)].id,
-  //   });
-  // }
   for (const comment of commentData){
     await Comment.create({
         ...comment,

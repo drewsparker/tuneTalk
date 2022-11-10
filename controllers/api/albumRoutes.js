@@ -46,10 +46,10 @@ router.get('/:id',async(req, res)=>{
                     return;
                 }   
                 else {
-                    console.log(newTracks);
+                    res.render('track',{tracks: data.body.tracks.items});
                  }                    
             });
-            res.json('track');
+            
 
         })
         .catch(function(err){
