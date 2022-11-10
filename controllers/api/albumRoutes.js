@@ -6,11 +6,7 @@ require('dotenv').config();
 var SpotifyWebApi = require('spotify-web-api-node');
 const { fdatasync } = require('fs');
 
-var spotifyApi = new SpotifyWebApi({
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    redirectUri: 'http://www.example.com/callback'
-});
+
 
 
 router.get('/:id',async(req, res)=>{
@@ -24,6 +20,12 @@ router.get('/:id',async(req, res)=>{
         },
     });
     if(!albumData[0]){
+        console.log("Make API request");
+        var spotifyApi = new SpotifyWebApi({
+            clientId: process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            redirectUri: 'http://www.example.com/callback'
+        });
         spotifyApi.setAccessToken(process.env.CLIENT_TOKEN);
         spotifyApi.getAlbum(req.params.id)
         .then((data) => {
@@ -56,7 +58,7 @@ router.get('/:id',async(req, res)=>{
     }
     //if data exist
     else{
-
+        console.log("get data from DB");
         const tracks = albumData.map((track) => track.get({ plain: true }));
         console.log(tracks);
         res.status(200).render('track',{tracks});
