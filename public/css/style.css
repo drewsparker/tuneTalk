@@ -78,3 +78,17 @@ body {
 .user-info small {
   color: var(--light);
 }
+
+ .no-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* color: #1b89bc; */
+  text-decoration: none;
+  font-size: 100%;
+}
+
+/* .no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+} */
