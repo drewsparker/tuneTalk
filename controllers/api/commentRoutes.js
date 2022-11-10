@@ -2,20 +2,7 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const { findAll } = require('../../models/Users');
 
-//
-// router.get('/:id', async(req, res)=>{
-//     const commentData=findAll({
-//         where:{
-//             track_id:req.params.id,
-//         }
-//     })
-//     if(!commentData){
 
-//     }else{
-
-//     }
-
-// })
 router.post('/', async(req,res)=>{
 
     try {
