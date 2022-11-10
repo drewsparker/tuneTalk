@@ -167,11 +167,24 @@ router.get('/profile', /*withAuth,*/ async (req, res) => {
 
 
           res.render('profile', {
-            comments,likes
+            comments,likes,logged_in: req.session.logged_in,
+            user_id: req.session.user_id,
           });
     } catch (err) {
         res.status(500).json(err);
     }
+});
+
+router.get('/comment', (req, res) => {
+  
+    res.redirect('/api/comments');
+
+});
+
+router.get('/like', (req, res) => {
+  
+    res.redirect('/api/likes');
+
 });
 
 

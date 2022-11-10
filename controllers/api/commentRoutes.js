@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Comment } = require('../../models');
+const { Comment, User,Track } = require('../../models');
 const { findAll } = require('../../models/Users');
 
 
@@ -24,14 +24,16 @@ router.get('/', async(req,res)=>{
       include: [
           { model: Track }, { model: User }
       ],
-      order : [['updatedAt', 'DESC']],
+      // order : [['updatedAt', 'DESC']],
 
   });
  
     const comments = commentData.map((comment) => comment.get({ plain: true }));
+    console.log(comments);
 
       res.render('comment', {
-        comments
+        comments,logged_in: req.session.logged_in,
+        user_id: req.session.user_id,
       });
 } catch (err) {
     res.status(500).json(err);
