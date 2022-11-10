@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const withAuth = require('../utils/withAuth');
-const { Album, Comment, Track, User } = require('../models');
+const { Album, Comment, Track, User, Like } = require('../models');
 require('dotenv').config();
 var SpotifyWebApi = require('spotify-web-api-node');
 const { findAll } = require('../models/Users');
@@ -147,6 +147,18 @@ router.get('/profile', /*withAuth,*/ async (req, res) => {
                 attributes: { exclude: ['password'] }
             }]
         });
+
+        const likeData = await Like.findAll({
+            where: {
+                user_id: 2
+                // user_id:req.session.user_id
+            },
+            include: [{ model: Track }, {
+                model: User,
+                attributes: { exclude: ['password'] }
+            }]
+        });
+        console.log("like",likeData);
 
 
         const comments = commentData.map((comment) => comment.get({ plain: true }));

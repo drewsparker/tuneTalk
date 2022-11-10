@@ -32,8 +32,8 @@ Like.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'comment',
+    modelName: 'like',
   }
 );
 
-module.exports = Comment;
+module.exports = Like;

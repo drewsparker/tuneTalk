@@ -21,7 +21,8 @@ module.exports = {
       const isToday = today.toDateString() === date.toDateString();
       const isYesterday = yesterday.toDateString() === date.toDateString();
       const isThisYear = today.getFullYear() === date.getFullYear();
-    
+
+      
     
       if (seconds < 5) {
         return 'now';
@@ -31,15 +32,20 @@ module.exports = {
         return 'about a minute ago';
       } else if (minutes < 60) {
         return `${ minutes } minutes ago`;
-      } else if (isToday) {
-        return getFormattedDate(date, 'Today'); // Today at 10:20
-      } else if (isYesterday) {
-        return getFormattedDate(date, 'Yesterday'); // Yesterday at 10:20
-      } else if (isThisYear) {
-        return getFormattedDate(date, false, true); // 10. January at 10:20
+      } else {
+        return `${new Date(dateParam).getMonth() + 1}/${new Date(dateParam).getDate()}/${
+          new Date(dateParam).getFullYear()
+        }`; 
       }
+      // } else if (isToday) {
+      //   return getFormattedDate(date, 'Today'); // Today at 10:20
+      // } else if (isYesterday) {
+      //   return getFormattedDate(date, 'Yesterday'); // Yesterday at 10:20
+      // } else if (isThisYear) {
+      //   return getFormattedDate(date, false, true); // 10. January at 10:20
+      // }
     
-      return getFormattedDate(date); // 10. January 2017. at 10:20
-    }
+      // return getFormattedDate(date); // 10. January 2017. at 10:20
+    },
   };
   
