@@ -34,7 +34,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  min-height: 250px;
+  /* min-height: 250px; */
 }
 
 .tag {
@@ -59,7 +59,7 @@ body {
 
 .card-body p {
   font-size: 13px;
-  margin: 0 0 40px;
+  /* margin: 0 0 40px; */
 }
 .user {
   display: flex;

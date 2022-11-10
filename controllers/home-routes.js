@@ -80,18 +80,6 @@ router.get('/search/:searchName', async (req, res) => {
                         return newAlbum;
                     });
 
-                    //Get the data from DB and render it to album handlebar
-                    // const albumData = await Album.findAll({
-                    //     where: {
-                    //         artist_name: req.params.searchName,
-                    //     },
-                    // });
-                    // console.log("albumData",albumData);
-                    // const albums = albumData.map((album) => album.get({ plain: true }));
-                    // console.log(albums);
-
-                    // console.log(data.body.albums.items);
-
                     console.log("items", data.body.albums.items);
                     // const albums=data.body.albums.items;
                     res.status(200).render('album', { albums: data.body.albums.items });
@@ -104,7 +92,7 @@ router.get('/search/:searchName', async (req, res) => {
                         console.error(err);
                     }
                 );
-            res.status(200).render('album');
+            // res.status(200).render('album');
         }
         //if data exist
         else {
