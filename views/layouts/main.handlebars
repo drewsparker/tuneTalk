@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-      <header>
+      {{!-- <header> --}}
         <div class="container">
           <div class="toppane">
 
@@ -33,11 +33,14 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/comments">Comments</a>
+                    <a class="nav-link" href="/api/comments">Comments</a>
                   </li>
                   {{#if logged_in}}
                   <li class="nav-item">
                     <a class="nav-link" href="/profile">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/api/likes">Liked library</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/logout">logout</a>
@@ -69,15 +72,19 @@
                   </ul>
                 </div>
               </nav>
-            </div>
-          </div>
-        </header>
-        <main>
-          <div class="container row">
-            {{{body}}}
-          </div>
 
-        </main>
+            </div>
+          
+        {{!-- </header>
+        <main> --}}
+          <main>
+            {{{body}}}
+          </main>
+            
+          
+
+        {{!-- </main> --}}
+        </div>
 
 
 
