@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
         console.log(likes);
         res.status(200).render('like', {
             likes,
-            logged_in: req.session.logged_in,
+            logged_in: true,
             user_id: req.session.user_id,
         });
 
@@ -34,7 +34,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/',async (req, res) => {
     try {
         console.log('user_id', req.session.user_id);
         const newLike = await Like.create({
@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
 
 });
 
-router.delete('/:id',withAuth, async (req, res) => {
+router.delete('/:id', async (req, res) => {
     try {
         console.log('user_id', req.session.user_id);
         const likeData = await Like.destroy({

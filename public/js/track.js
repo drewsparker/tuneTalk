@@ -20,7 +20,7 @@ track_card.addEventListener('click', async (event) => {
             console.log(response);
 
             if (response.ok) {
-               
+               //document.location.replace('/profile');
                 location.reload();
             } else {
                 alert('Failed to create comment');

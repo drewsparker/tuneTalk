@@ -35,7 +35,8 @@ router.get('/', async(req,res)=>{
     console.log(comments);
 
       res.render('comment', {
-        comments,logged_in: req.session.logged_in,
+        comments,
+        log_in:req.session.log_in,
         user_id: req.session.user_id,
       });
 } catch (err) {

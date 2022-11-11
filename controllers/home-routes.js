@@ -119,7 +119,7 @@ router.get('/search/:searchName', async (req, res) => {
 
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
-        res.redirect('/');
+        res.redirect('/profile');
         return;
     }
     res.render('login');
@@ -130,7 +130,7 @@ router.get('/Signup', (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to route
-router.get('/profile', /*withAuth,*/ async (req, res) => {
+router.get('/profile', async (req, res) => {
     try {
 
         const commentData = await Comment.findAll({
@@ -163,7 +163,7 @@ router.get('/profile', /*withAuth,*/ async (req, res) => {
 
 
           res.render('profile', {
-            comments,likes,logged_in: req.session.logged_in,
+            comments,likes,logged_in: true,  //changed from logged_in: req.session.logged_in
             user_id: req.session.user_id,
           });
     } catch (err) {

@@ -33,13 +33,15 @@ router.get('/:id',async(req, res)=>{
             data.body.tracks.items.forEach(async(track) => {
                 console.log(track.name,track.track_number,track.duration_ms,track.uri,req.body.id,track.artists[0].id);
                 
-                const newTracks=await Track.create({
+                const newTracks=await Track.findOrCreate({
+                    where:{
                     name : track.name,
                     track_number : track.track_number,
                     duration_ms : track.duration_ms,
                     uri : track.uri,
                     album_id:req.params.id,
                     artist_id:track.artists[0].id, 
+                    }
                 });
                 if(!newTracks){
                     res.status(400).json({ message: 'Fail to insert' });
