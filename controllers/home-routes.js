@@ -82,7 +82,11 @@ router.get('/search/:searchName', async (req, res) => {
 
                     console.log("items", data.body.albums.items);
                     // const albums=data.body.albums.items;
-                    res.status(200).render('album', { albums: data.body.albums.items });
+                    res.status(200).render('album', { 
+                        albums: data.body.albums.items,
+                        logged_in: req.session.logged_in,
+                        user_id: req.session.user_id,
+                     });
 
                     // res.redirect(`/search/${req.params.searchName}`);
 

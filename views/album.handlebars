@@ -1,4 +1,4 @@
-<div class="container row">
+<div class="container album-container row">
 {{#each albums as |album| }}
 
 <div class="card col-3" id="album-card">
@@ -6,7 +6,7 @@
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/{{album.id}}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
     <div class="card-body">
-        <button class="no-button album-btn" data-id="{{album.id}}">{{album.name}}</button>
+        <button type="submit" class="no-button album-btn" data-id="{{album.id}}">{{album.name}}</button>
     </div>
 </div>
 {{/each}}

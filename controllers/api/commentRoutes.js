@@ -1,15 +1,18 @@
 const router = require('express').Router();
 const { Comment, User,Track } = require('../../models');
+const withAuth = require('../../utils/withAuth');
 const { findAll } = require('../../models/Users');
 
 
 router.post('/', async(req,res)=>{
-
+console.log("get api/comment post");
     try {
         const  newComment= await Comment.create({
-          ...req.body, //track_id, text
+          text : req.body.text, //track_id, text
           user_id: req.session.user_id,
+          track_id : req.body.track_id
         });
+        console.log(newComment);
     
         res.status(200).json(newComment);
       } catch (err) {

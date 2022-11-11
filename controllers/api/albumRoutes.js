@@ -46,7 +46,11 @@ router.get('/:id',async(req, res)=>{
                     return;
                 }   
                 else {
-                    res.render('track',{tracks: data.body.tracks.items});
+                    console.log(data.body.tracks.items.comments);
+                    res.render('track',{tracks: data.body.tracks.items,
+                        logged_in: req.session.logged_in,
+                        user_id: req.session.user_id,
+                    });
                  }                    
             });
             
@@ -61,7 +65,10 @@ router.get('/:id',async(req, res)=>{
         console.log("get data from DB");
         const tracks = albumData.map((track) => track.get({ plain: true }));
         console.log(tracks);
-        res.status(200).render('track',{tracks});
+        console.log("render track logged_in",req.session.logged_in);
+        res.status(200).render('track',{tracks,
+            logged_in: req.session.logged_in,
+            user_id: req.session.user_id,});
 
     }
 
