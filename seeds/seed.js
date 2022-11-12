@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User,Track,Album,Comment } = require('../models');
+const { User,Track,Album,Comment,Like } = require('../models');
 
 const userData = require('./user.json');
 const albumData = require('./album.json');
@@ -20,17 +20,23 @@ const seedDatabase = async () => {
     //   user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
+  const tracks = await Track.bulkCreate(trackData, {
+    individualHooks: true,
+    returning: true,
+  });
 
-  for (const track of trackData) {
-    await Track.create({
-      ...track,
-    //   user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+
   for (const comment of commentData){
     await Comment.create({
         ...comment,
-        // track_id: trackD[Math.floor(Math.random() * users.length)].id,
+        track_id: tracks[Math.floor(Math.random() * users.length)].id,
+        user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+
+  for (const track of trackData){  //create like 
+    await Like.create({
+        track_id: tracks[Math.floor(Math.random() * tracks.length)].id,
         user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }

@@ -1,6 +1,18 @@
-<h1>album</h1>
-
+<div class="container row">
 {{#each albums as |album| }}
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/{{album.id}}" width="352" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<p>123</p>
+
+<div class="card col-3" id="album-card">
+    <div class="card-header">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/{{album.id}}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="card-body">
+        <button class="no-button album-btn" data-id="{{album.id}}">{{album.name}}</button>
+    </div>
+</div>
 {{/each}}
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/js/album.js"></script>
+

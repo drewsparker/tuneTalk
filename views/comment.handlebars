@@ -1,11 +1,11 @@
-  <div class="container row">
-  {{#each comments as |comment| }}
+<div class="container row">
+{{#each comments as |comment| }}
 
   <div class="card col-3">
     <div class="card-header">
       <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed?uri={{comment.track.uri}}"
-        width="156" height="156" frameBorder="0" allowfullscreen=""
+        width="100%" height="150" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen;
         picture-in-picture" loading="lazy"></iframe>
     </div>
@@ -28,6 +28,6 @@
       </div>
     </div>
   </div>
-
+ 
   {{/each}}
-    </div>
+ </div>

@@ -3,6 +3,7 @@ const Album = require('./Album');
 const Track =require('./Track');
 const Artist = require('./Artist');
 const Comment = require('./Comment');
+const Like = require('./Likes');
 
 
 // Artist.hasMany(Album, {
@@ -28,6 +29,7 @@ User.hasMany(Comment, {
 
 
 
+
 // Album.belongsTo(Artist, {
 //   foreignKey: 'artist_id'
 // });
@@ -44,6 +46,13 @@ Comment.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
+Like.belongsTo(User,{
+    foreignKey: 'user_id'
+});
+Like.belongsTo(Track,{
+    foreignKey: 'track_id'
+});
 
 
-module.exports = { User, Album, Track, Artist, Comment };
+
+module.exports = { User, Album, Track, Artist, Comment, Like };
