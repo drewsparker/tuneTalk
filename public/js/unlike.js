@@ -1,4 +1,4 @@
-var like_card = document.querySelector('.container');
+var like_card = document.querySelector('.like-container');
 
 console.log("unlike.js");
 console.log(like_card);

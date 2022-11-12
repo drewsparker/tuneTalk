@@ -1,4 +1,4 @@
-<h3 class="row"><strong>> Comment</strong></h3>
+<h3 class="row">Comment >></h3>
 <div class="container row">
   
   {{#each comments as |comment| }}
@@ -7,7 +7,7 @@
     <div class="card-header">
       <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed?uri={{comment.track.uri}}"
-        width="156" height="156" frameBorder="0"
+        width="100%" height="156" frameBorder="0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen;
         picture-in-picture" loading="lazy"></iframe>
     </div>
@@ -33,7 +33,7 @@
  
   {{/each}}
    </div>
-<h3 class="row"><strong>> Liked</strong></h3>
+<h3 class="row">Liked >></h3>
 <div class="container row">
     
   {{#each likes as |like| }}
