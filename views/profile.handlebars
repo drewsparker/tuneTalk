@@ -1,0 +1,52 @@
+<h3 class="row">Comment >></h3>
+<div class="container row">
+  
+  {{#each comments as |comment| }}
+ 
+  <div class="card col-3">
+    <div class="card-header">
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed?uri={{comment.track.uri}}"
+        width="100%" height="156" frameBorder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen;
+        picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="card-body">
+      {{!-- <span class="tag tag-pop">Pop</span> --}}
+      <h4>
+        {{comment.track.name}}
+      </h4>
+      <p>
+        {{comment.text}}
+      </p>
+      <div class="user">
+        <img
+          src="https://avatars.dicebear.com/api/avataaars/${{comment.user.username}}.svg"
+          width="40px" height="40px" id="{{comment.user.id}}" />
+        <div class="user-info">
+          <h5>{{comment.user.username}}</h5>
+          <small>{{timeAgo comment.updatedAt}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  {{/each}}
+   </div>
+<h3 class="row">Liked >></h3>
+<div class="container row">
+    
+  {{#each likes as |like| }}
+
+  <div class="card col-3">
+    <div class="card-header">
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed?uri={{like.track.uri}}"
+        width="156" height="156" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen;
+        picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  {{/each}}
+    </div>
